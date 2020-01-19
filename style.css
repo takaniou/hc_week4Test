@@ -3,7 +3,109 @@
     margin: 0;
 }
 
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    background-color: #9f0403;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px #00000080;
+    position: fixed;
+    background-color: #ffffffcc;
+    z-index: 1000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: '微軟正黑體',sans-serif;
+    font-size: 17px;
+    line-height: 56px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9f0403;
+}
+
+
+/* banner */
+.banner {
+    /* vh =  螢幕高度單位，以百分比計算*/
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat;
+    background-size: cover;
+    transition: 5s ease;
+}
+
+.banner:hover {
+    transform: scale(1.05);
+}
+
+.bn-box {
+    overflow: hidden;
+}
+
+
+
+/* 文案 */
+.content {
+    width: 900px;
+    padding: 80px 10px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    color: #9f0403;
+    text-align: center;
+}
+
+.content p,
+.content ul {
+    padding: 20px 0;
+    line-height: 2;
+}
+
+.sect2 {
+    background-color: #9f0403;
+    color: #ffffff;
+}
+
+.sect2 h1 {
+    color: #ffffff;
+}
+
+
+/* footer */
+
+footer {
+    height: 300px;
+    background-color: #9f0403;
+    color: #cccccc;
+    text-align: center;
+    line-height: 300px;
 }
